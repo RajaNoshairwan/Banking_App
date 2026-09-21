@@ -1,4 +1,5 @@
 import 'package:banking_app/authentication_screens/login_screen.dart';
+import 'package:banking_app/authentication_screens/signup_screen.dart';
 import 'package:banking_app/bottomNavbar.dart';
 import 'package:banking_app/home_screen/home_screen.dart';
 import 'package:banking_app/splash_screen.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Banking App',
-      home: LoginScreen(),
+      home: SignupScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
