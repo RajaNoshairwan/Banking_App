@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:banking_app/authentication_screens/login_screen.dart';
 import 'package:banking_app/home_screen/home_screen.dart';
 import 'package:banking_app/main.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 3), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => MyHomePage()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
     });
   }
 

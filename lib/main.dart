@@ -2,6 +2,7 @@ import 'package:banking_app/authentication_screens/login_screen.dart';
 import 'package:banking_app/authentication_screens/signup_screen.dart';
 import 'package:banking_app/bottomNavbar.dart';
 import 'package:banking_app/home_screen/home_screen.dart';
+import 'package:banking_app/navBar_screens/settings_screen.dart';
 import 'package:banking_app/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Banking App',
-      home: SignupScreen(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: HomeScreen(),
-      bottomNavigationBar: BottomNavBar(),
+      bottomNavigationBar: BottomNavBar(selectedIndex: 0),
     );
   }
 }

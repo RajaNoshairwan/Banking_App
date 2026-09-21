@@ -1,6 +1,8 @@
 import 'package:banking_app/authentication_screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../main.dart';
+
 class SignupScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -68,7 +70,9 @@ class SignupScreen extends StatelessWidget{
 
               SizedBox(width: double.infinity, height: 60, child: ElevatedButton(style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFF0066FF), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16))),
-                  onPressed: (){}, child: Text('Sign Up',style: TextStyle(color: Colors.white, fontSize: 18,fontWeight: FontWeight.bold),
+                  onPressed: (){
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MyHomePage()),);
+                  }, child: Text('Sign Up',style: TextStyle(color: Colors.white, fontSize: 18,fontWeight: FontWeight.bold),
                   ))),
               SizedBox(height: 30,),
 
